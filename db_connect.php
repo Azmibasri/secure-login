@@ -12,7 +12,6 @@ $conn = mysqli_init();
 mysqli_options($conn, MYSQLI_OPT_SSL_VERIFY_SERVER_CERT, false);
 
 if (!mysqli_real_connect($conn, $servername, $username, $password, $database, $port, NULL, MYSQLI_CLIENT_SSL)) {
- 
     die("Connection failed: " . mysqli_connect_error());
 }
 
