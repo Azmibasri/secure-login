@@ -3,6 +3,7 @@
 ini_set('session.cookie_httponly', 1);
 ini_set('session.use_strict_mode', 1);
 
+session_save_path("/tmp"); // <-- Tambahkan baris ini
 session_start();
 
 // Cek apakah user sudah login

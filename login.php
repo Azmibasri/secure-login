@@ -10,6 +10,7 @@ ini_set('session.use_strict_mode', 1);
 // ini cuma efektif jika situs dijalankan lewat https
 // ini_set('session.cookie_secure', 1);
 
+session_save_path("/tmp"); // <-- Tambahkan baris ini
 session_start();
 
 // Konfigurasi reCAPTCHA - GANTI dengan keys milikmu
